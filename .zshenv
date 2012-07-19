@@ -55,8 +55,8 @@ if [[ -z "$LANG" ]]; then
 fi
 
 # Editors
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vi'
+export VISUAL='vi'
 export PAGER='less'
 
 # Browser (Default)
