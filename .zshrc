@@ -53,4 +53,5 @@ zstyle ':omz:module:prompt' theme 'sorin'
 source "$OMZ/init.zsh"
 
 # Customize to your needs...
-
+alias tmd='tmux attach -d'
+alias srm='shred -u'
