@@ -54,4 +54,11 @@ source "$OMZ/init.zsh"
 
 # Customize to your needs...
 alias tmd='tmux attach -d'
-alias srm='shred -u'
+function srm() {
+    if [[ -x /usr/bin/shred ]]
+    then
+        /usr/bin/shred -u $*
+    else
+        /usr/bin/srm $*
+    fi
+}
